@@ -14,6 +14,22 @@ public class ClassRoom {
         this.studMass = studMass;
     }
 
+    public ClassRoom(String classWord, int classLimit, Student[] studMass, String lang) {
+        this.classWord = classWord;
+        this.classLimit = classLimit;
+        this.studMass = studMass;
+        this.lang = lang;
+    }
+
+    public ClassRoom(String classWord, String lang) {
+        this.classWord = classWord;
+        this.lang = lang;
+    }
+
+    public ClassRoom(String classWord) {
+        this.classWord = classWord;
+    }
+
     public int getClassCount() {
         return studMass.length;
     }
@@ -98,4 +114,15 @@ public class ClassRoom {
         return "Not found in " + classWord;
     }
 
+    public String getClassWord() {
+        return classWord;
+    }
+
+    public int getClassLimit() {
+        return classLimit;
+    }
+
+    public String getLang() {
+        return lang;
+    }
 }
